@@ -5,9 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
 <androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/forgot_label"
+    android:id="@+id/login_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".screens.title.LoginFragment">
 
     <TextView
         android:id="@+id/email_address_label"
