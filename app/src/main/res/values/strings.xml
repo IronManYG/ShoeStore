@@ -10,4 +10,7 @@
     <string name="sign_up_question">Don\'t have an account?</string>
     <string name="password">Password</string>
     <string name="app_icon_description">Application icon</string>
+    <string name="welcome_shoe">Welcome Shoe!</string>
+    <string name="welcome_massage">The easiest waty to sort your shoes inventor, edit and add!</string>
+    <string name="shoe_shop_icon">Shoe shop icon</string>
 </resources>
