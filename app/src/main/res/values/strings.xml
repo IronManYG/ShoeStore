@@ -13,4 +13,8 @@
     <string name="welcome_shoe">Welcome Shoe!</string>
     <string name="welcome_massage">The easiest waty to sort your shoes inventor, edit and add!</string>
     <string name="shoe_shop_icon">Shoe shop icon</string>
+    <string name="how_to_use">Click + And Add</string>
+    <string name="instructions_massage">You can add shoes to your inventory by clicking + icon and enter shoe detail then save</string>
+    <string name="next">Next</string>
+    <string name="plus_icon">Plus Icon</string>
 </resources>
