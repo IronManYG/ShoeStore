@@ -44,7 +44,7 @@
             android:autofillHints="" />
 
         <Button
-            android:id="@+id/log_in"
+            android:id="@+id/log_in_button"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -88,20 +88,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/forgot_question"
-            app:layout_constraintTop_toBottomOf="@+id/log_in" />
+            app:layout_constraintTop_toBottomOf="@+id/log_in_button" />
 
         <TextView
             android:id="@+id/sign_up_question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sign_up_question"
-            app:layout_constraintBaseline_toBaselineOf="@+id/sign_up"
-            app:layout_constraintEnd_toStartOf="@+id/sign_up"
+            app:layout_constraintBaseline_toBaselineOf="@+id/sign_up_button"
+            app:layout_constraintEnd_toStartOf="@+id/sign_up_button"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/sign_up"
+            android:id="@+id/sign_up_button"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
