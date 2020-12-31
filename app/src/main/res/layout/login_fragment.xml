@@ -2,143 +2,143 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.login.LoginFragment">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/login_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".screens.title.LoginFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/email_address_label"
-        style="@android:style/Widget.Holo.TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/horizontal_layout_margin"
-        android:layout_marginTop="@dimen/vertical_layout_margin"
-        android:text="@string/email_address"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shoe_store" />
+        <TextView
+            android:id="@+id/email_address_label"
+            style="@android:style/Widget.Holo.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/horizontal_layout_margin"
+            android:layout_marginTop="@dimen/vertical_layout_margin"
+            android:text="@string/email_address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_store" />
 
-    <TextView
-        android:id="@+id/password_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_layout_margin"
-        android:text="@string/password"
-        app:layout_constraintStart_toStartOf="@+id/email_address_field"
-        app:layout_constraintTop_toBottomOf="@+id/email_address_field" />
+        <TextView
+            android:id="@+id/password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_layout_margin"
+            android:text="@string/password"
+            app:layout_constraintStart_toStartOf="@+id/email_address_field"
+            app:layout_constraintTop_toBottomOf="@+id/email_address_field" />
 
-    <EditText
-        android:id="@+id/password_edit"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_layout_margin"
-        android:ems="10"
-        android:hint="@string/enter_password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/email_address_field"
-        app:layout_constraintStart_toStartOf="@+id/password_label"
-        app:layout_constraintTop_toBottomOf="@+id/password_label"
-        android:autofillHints="" />
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_layout_margin"
+            android:ems="10"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/email_address_field"
+            app:layout_constraintStart_toStartOf="@+id/password_label"
+            app:layout_constraintTop_toBottomOf="@+id/password_label"
+            android:autofillHints="" />
 
-    <Button
-        android:id="@+id/log_in"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_layout_margin"
-        android:text="@string/log_in"
-        app:layout_constraintEnd_toEndOf="@+id/password_edit"
-        app:layout_constraintStart_toStartOf="@+id/password_edit"
-        app:layout_constraintTop_toBottomOf="@+id/password_edit" />
+        <Button
+            android:id="@+id/log_in"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_layout_margin"
+            android:text="@string/log_in"
+            app:layout_constraintEnd_toEndOf="@+id/password_edit"
+            app:layout_constraintStart_toStartOf="@+id/password_edit"
+            app:layout_constraintTop_toBottomOf="@+id/password_edit" />
 
-    <EditText
-        android:id="@+id/email_address_field"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_layout_margin"
-        android:layout_marginEnd="@dimen/horizontal_layout_margin"
-        android:ems="10"
-        android:hint="@string/enter_email_address"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/email_address_label"
-        app:layout_constraintTop_toBottomOf="@+id/email_address_label"
-        android:autofillHints="" />
+        <EditText
+            android:id="@+id/email_address_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_layout_margin"
+            android:layout_marginEnd="@dimen/horizontal_layout_margin"
+            android:ems="10"
+            android:hint="@string/enter_email_address"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/email_address_label"
+            app:layout_constraintTop_toBottomOf="@+id/email_address_label"
+            android:autofillHints="" />
 
-    <TextView
-        android:id="@+id/forgot_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/forgot_question"
-        app:layout_constraintBaseline_toBaselineOf="@+id/forgot_help"
-        app:layout_constraintEnd_toStartOf="@+id/forgot_help"
-        app:layout_constraintHorizontal_bias="0.50"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/forgot_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_question"
+            app:layout_constraintBaseline_toBaselineOf="@+id/forgot_help"
+            app:layout_constraintEnd_toStartOf="@+id/forgot_help"
+            app:layout_constraintHorizontal_bias="0.50"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/forgot_help"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vertical_layout_margin"
-        android:text="@string/forgot_help"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/forgot_question"
-        app:layout_constraintTop_toBottomOf="@+id/log_in" />
+        <TextView
+            android:id="@+id/forgot_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertical_layout_margin"
+            android:text="@string/forgot_help"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/forgot_question"
+            app:layout_constraintTop_toBottomOf="@+id/log_in" />
 
-    <TextView
-        android:id="@+id/sign_up_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sign_up_question"
-        app:layout_constraintBaseline_toBaselineOf="@+id/sign_up"
-        app:layout_constraintEnd_toStartOf="@+id/sign_up"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/sign_up_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_question"
+            app:layout_constraintBaseline_toBaselineOf="@+id/sign_up"
+            app:layout_constraintEnd_toStartOf="@+id/sign_up"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/sign_up"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/vertical_layout_margin"
-        android:text="@string/sign_up"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/sign_up_question"
-        app:layout_constraintTop_toBottomOf="@+id/forgot_help"
-        app:layout_constraintVertical_bias="1.0" />
+        <Button
+            android:id="@+id/sign_up"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/vertical_layout_margin"
+            android:text="@string/sign_up"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/sign_up_question"
+            app:layout_constraintTop_toBottomOf="@+id/forgot_help"
+            app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/shoe_store"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/sevillana"
-        android:text="@string/app_name"
-        android:textSize="42sp"
-        app:layout_constraintBottom_toTopOf="@+id/email_address_field"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        <TextView
+            android:id="@+id/shoe_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sevillana"
+            android:text="@string/app_name"
+            android:textSize="42sp"
+            app:layout_constraintBottom_toTopOf="@+id/email_address_field"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
 
-    <ImageView
-        android:id="@+id/shoe_store_icon"
-        android:layout_width="127dp"
-        android:layout_height="105dp"
-        app:layout_constraintBottom_toTopOf="@+id/shoe_store"
-        app:layout_constraintEnd_toEndOf="@+id/shoe_store"
-        app:layout_constraintStart_toStartOf="@+id/shoe_store"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_shoes"
-        android:contentDescription="@string/app_icon_description" />
+        <ImageView
+            android:id="@+id/shoe_store_icon"
+            android:layout_width="127dp"
+            android:layout_height="105dp"
+            app:layout_constraintBottom_toTopOf="@+id/shoe_store"
+            app:layout_constraintEnd_toEndOf="@+id/shoe_store"
+            app:layout_constraintStart_toStartOf="@+id/shoe_store"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_shoes"
+            android:contentDescription="@string/app_icon_description" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
