@@ -17,4 +17,6 @@
     <string name="instructions_massage">You can add shoes to your inventory by clicking + icon and enter shoe detail then save</string>
     <string name="next">Next</string>
     <string name="plus_icon">Plus Icon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
