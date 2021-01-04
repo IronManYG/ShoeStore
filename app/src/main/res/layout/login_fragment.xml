@@ -6,7 +6,7 @@
     tools:context=".screens.login.LoginFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/login_layout"
+        android:id="@+id/loginFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
