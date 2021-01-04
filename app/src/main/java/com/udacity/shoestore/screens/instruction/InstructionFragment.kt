@@ -21,6 +21,11 @@ class InstructionFragment : Fragment() {
         // Inflate the layout for this fragment
         val binding: InstructionFragmentBinding = DataBindingUtil.inflate(
             inflater, R.layout.instruction_fragment, container, false)
+
+        binding.nextShoeList.setOnClickListener{
+            findNavController().navigate(InstructionFragmentDirections.actionInstructionFragmentToShoesListFragment())
+        }
+
         return binding.root
     }
 
