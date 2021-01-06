@@ -21,4 +21,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_button">Click button to add new show</string>
     <string name="log_out">Log Out</string>
+    <string name="shoes_list">Shoes List</string>
+    <string name="shoe_detail">Shoe Detail</string>
+    <string name="shoe_name">Shoe Name:</string>
+    <string name="shoe_company">Company:</string>
+    <string name="shoe_size">Shoe Size:</string>
+    <string name="shoe_description">Shoe Description:</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>

@@ -2,4 +2,5 @@
 <resources>
     <dimen name="vertical_layout_margin">16dp</dimen>
     <dimen name="horizontal_layout_margin">32dp</dimen>
+    <dimen name="horizontal_label_field_maragin">8dp</dimen>
 </resources>
