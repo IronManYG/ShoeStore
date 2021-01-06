@@ -5,7 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
+import com.udacity.shoestore.databinding.ShoesListFragmentBinding
 
 class ShoesListFragment : Fragment() {
 
@@ -14,7 +17,14 @@ class ShoesListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.shoes_list_fragment, container, false)
+        val binding: ShoesListFragmentBinding = DataBindingUtil.inflate(
+            inflater, R.layout.shoes_list_fragment, container, false)
+
+        binding.addShoe.setOnClickListener{
+            findNavController().navigate(ShoesListFragmentDirections.actionShoesListFragmentToShoeDetail())
+        }
+
+        return binding.root
     }
 
 }
