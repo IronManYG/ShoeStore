@@ -5,6 +5,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.shoeDetail.ShoeDetailFragment">
+    
+    <data>
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+
+        <variable
+            name="shoeViewMode"
+            type="com.udacity.shoestore.models.ShoeViewModel" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -28,7 +38,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/vertical_layout_margin"
             android:ems="10"
-            android:inputType="number"
+            android:text="@={`` + shoe.size}"
+            android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="@+id/shoe_company_field"
             app:layout_constraintStart_toStartOf="@+id/shoe_company_field"
             app:layout_constraintTop_toBottomOf="@+id/shoe_size_label" />
@@ -40,6 +51,7 @@
             android:layout_marginTop="@dimen/vertical_layout_margin"
             android:layout_marginEnd="@dimen/horizontal_layout_margin"
             android:ems="10"
+            android:text="@={shoe.name}"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/shoe_name_label"
@@ -60,6 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/vertical_layout_margin"
             android:ems="10"
+            android:text="@={shoe.description}"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/shoe_size_field"
             app:layout_constraintStart_toStartOf="@+id/shoe_size_field"
@@ -81,6 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/vertical_layout_margin"
             android:ems="10"
+            android:text="@={shoe.company}"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/shoe_name_field"
             app:layout_constraintStart_toStartOf="@+id/shoe_name_field"
@@ -125,10 +139,11 @@
             android:layout_marginEnd="@dimen/horizontal_layout_margin"
             android:layout_marginBottom="@dimen/vertical_layout_margin"
             android:text="@string/save"
+            android:onClick="@{(v) -> shoeViewMode.saveButtonClick(v,shoe)}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/cancel_button" />
+            app:layout_constraintStart_toEndOf="@+id/cancel_button"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

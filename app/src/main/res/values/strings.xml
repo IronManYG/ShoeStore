@@ -17,7 +17,6 @@
     <string name="instructions_massage">You can add shoes to your inventory by clicking + icon and enter shoe detail then save</string>
     <string name="next">Next</string>
     <string name="plus_icon">Plus Icon</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_button">Click button to add new show</string>
     <string name="log_out">Log Out</string>
@@ -29,4 +28,5 @@
     <string name="shoe_description">Shoe Description:</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="shoe_detail_s">Shoe Name: %1$s \n\nCompany: %2$s \n\nShoe Size: %3$.1f \n\nShoe Description: %4$s \n\n</string>
 </resources>
