@@ -5,6 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.instruction.InstructionFragment">
 
+    <!--Using constraint layout here to aligning required elements & add/remove more widgets
+    & give it the possibility to expand it later easily -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
