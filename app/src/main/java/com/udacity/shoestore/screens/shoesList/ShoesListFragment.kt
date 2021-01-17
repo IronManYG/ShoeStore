@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.onNavDestinationSelected
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.ShoesListFragmentBinding
 import com.udacity.shoestore.databinding.ShoesListItemBinding
@@ -60,10 +61,8 @@ class ShoesListFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.logout_menu_item){
-            findNavController().navigate(ShoesListFragmentDirections.actionShoesListFragmentToLoginFragment())
-        }
-        return super.onOptionsItemSelected(item)
+        return item.onNavDestinationSelected(findNavController())
+                || super.onOptionsItemSelected(item)
     }
 
     private fun addShoe(shoeName:String, shoeCompany: String, shoeSize: Double, shoeDescription:String){
